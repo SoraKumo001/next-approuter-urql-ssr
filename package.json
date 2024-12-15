@@ -1,0 +1,27 @@
+{
+	"name": "next-approuter-urql-ssr",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "next",
+		"dev:codegen": "graphql-codegen --config codegen.ts",
+		"dev:query": "graphql-auto-query https://graphqlpokemon.favware.tech/v8 -d 1 -o app/gql/query.graphql",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@react-libraries/next-exchange-ssr": "^1.0.7",
+		"graphql-tag": "^2.12.6",
+		"next": "^15.1.0",
+		"urql": "^4.2.1"
+	},
+	"devDependencies": {
+		"@graphql-codegen/cli": "5.0.3",
+		"@graphql-codegen/client-preset": "4.5.1",
+		"@graphql-codegen/typescript-urql": "^4.0.0",
+		"@types/react": "19.0.1",
+		"graphql-auto-query": "^1.0.4",
+		"typescript": "^5.7.2"
+	}
+}
