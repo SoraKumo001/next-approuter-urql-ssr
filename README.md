@@ -43,6 +43,7 @@ export default config;
 
 ```sh
 # Automatically create GraphQL operations (app/gql/query.graphql)
+# https://github.com/SoraKumo001/next-approuter-urql-ssr/blob/master/app/gql/graphql.ts
 npm run graphql-auto-query https://graphqlpokemon.favware.tech/v8 -d 1 -o app/gql/query.graphql
 # Create Hooks for Urql
 npm run graphql-codegen --config codegen.ts
